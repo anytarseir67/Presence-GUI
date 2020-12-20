@@ -17,7 +17,7 @@ label2.grid(row=0, column=1)
 entry = tk.Entry(master=root, fg="black", bg="blue")
 entry2 = tk.Entry(master=root, fg="black", bg="blue")
 def conv():
-    print(RPC.update(details=f"{entry.get()}", state=f"{entry2.get()}", large_image="test_img", small_image="py", large_text="secret toast", small_text="le language"))  # Set the presence
+    print(RPC.update(details=f"{entry.get()}", state=f"{entry2.get()}", large_image="example_img", small_image="example_img", large_text="large tooltip", small_text="small tooltip"))
 
 entry.grid(row=1, column=0)
 entry2.grid(row=1, column=1)

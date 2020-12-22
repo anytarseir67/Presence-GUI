@@ -1,5 +1,11 @@
 import tkinter as tk
-from pypresence import Presence
+try:
+    from pypresence import Presence
+except:
+    import os
+    os.system('cmd /c pip install pypresence')
+    from pypresence import Presence
+
 import sys
 
 client_id = '''client id here'''

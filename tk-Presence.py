@@ -21,9 +21,9 @@ entry2 = tk.Entry(master=root, fg="black", bg="blue")
 small = tk.Entry(master=root, fg="black", bg="blue")
 large = tk.Entry(master=root, fg="black", bg="blue")
 small_label = tk.Label(master=root, text="small image")
-small_label.grid(row=2, column=0)
+small_label.grid(row=2, column=1)
 large_label = tk.Label(master=root, text="large image")
-large_label.grid(row=2, column=1)
+large_label.grid(row=2, column=0)
 
 def conv():
     try:
@@ -43,8 +43,8 @@ def close():
 
 entry.grid(row=1, column=0)
 entry2.grid(row=1, column=1)
-small.grid(row=3, column=0)
-large.grid(row=3, column=1)
+small.grid(row=3, column=1)
+large.grid(row=3, column=0)
 btn = tk.Button(master=root, text="set rpc", command=conv)
 btn.grid(row=1, column=2)
 close_button = tk.Button(master=root, text="quit", command=close)
